@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.shopping {
+    margin-bottom: 60px;
+}
+
+.shopping h1 {
+    font-size: 35px;
+    color: cyan;
+    margin-right: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.shopping span {
+    font-style: italic;
+    font-size: 25px;
+    color: azure;
+    text-transform: capitalize;
+}
+
+.shopping {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.shopping .fa {
+    color: white;
+    margin-right: 6px;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 100%;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    padding: 30px;
+    background: black;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.href ul {
+    list-style: none;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+    animation-name: shop;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background: url('maleshirt/11.webp');
+    width: 280px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 13px;
+}
+
+@keyframes shop {
+    20% {
+        background: url('femaleshoe/1.webp')
+    }
+    40% {
+        background: url('maleshoe/1.webp')
+    }
+    60% {
+        background: url('maleshirt/1.webp')
+    }
+    80% {
+        background: url('femalebag/1.webp')
+    }
+    100% {
+        background: url('maleshoe/3.webp')
+    }
+}
+
+.href ul li {
+    margin-bottom: 10px;
+}
+
+.href {
+    margin-bottom: 60px;
+}
+
+.href ul li a {
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.shop {
+    margin-top: 5px;
+}
+
+.shop button {
+    padding: 8px 35px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: cursive;
+    background: rgb(78, 158, 158);
+    transition: all 1s ease;
+}
+
+.shop button:hover {
+    background: cyan;
+    padding: 12px 39px;
+}
